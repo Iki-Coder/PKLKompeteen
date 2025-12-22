@@ -85,7 +85,6 @@
       box-shadow: 0 0 0 0.2rem rgba(75, 0, 130, 0.25);
     }
 
-    /* Loader */
     .loader-bg {
       position: fixed;
       top: 0; left: 0;
@@ -199,12 +198,6 @@
         <button type="submit" class="btn btn-login">LOGIN</button>
       </div>
     </form>
-
-    <div class="or-divider">OR</div>
-
-    <a href="{{ url('/auth/redirect') }}" class="google-btn">
-      <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google Logo">
-      LOGIN WITH GOOGLE
     </a>
 
     <div class="mt-4 text-center">

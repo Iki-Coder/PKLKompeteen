@@ -63,7 +63,7 @@ Route::get('testing', '\App\Http\Controllers\TestingController@index');
 Route::get('/', HomeController::class)->name('home');
 // course route
 Route::controller(LandingCourseController::class)->as('course.')->group(function(){
-    Route::get('/courses', 'index')->name('index');
+    Route::get('/course', 'index')->name('index');
     Route::get('/courses/{course:slug}', 'show')->name('show');
     Route::get('/courses/{course:slug}/{series:number_of_series}', 'series')->name('series');
     Route::post('/courses/{course}/favorite', 'toggleFavorite')->name('favorite')->middleware('auth');
